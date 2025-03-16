@@ -29,51 +29,6 @@ namespace Scripts {
                     "muzzle_projectile_1"
                 }
             },
-            Targeting = new TargetingDef {
-                Threats = new[] {
-                    Grids,
-                    Projectiles,
-                    Characters,
-                    Meteors,
-                    Neutrals
-                },
-                SubSystems = new[] {
-                    Thrust,
-                    Utility,
-                    Offense,
-                    Power,
-                    Production,
-                    Any
-                },
-                ClosestFirst = true,
-                IgnoreDumbProjectiles = false,
-                LockedSmartOnly = false,
-                MinimumDiameter = 0,
-                MaximumDiameter = 0,
-                MinTargetDistance = 0,
-                MaxTargetDistance = 3000,
-                TopTargets = 4,
-                CycleTargets = 0,
-                TopBlocks = 8,
-                StopTrackingSpeed = 0,
-                UniqueTargetPerWeapon = 0,
-                MaxTrackingTime = 0,
-                ShootBlanks = false,
-                FocusOnly = false,
-                EvictUniqueTargets = false,
-                Communications = new CommunicationDef { 
-                    StoreTargets = false,
-                    StorageLimit = 0,
-                    MaxConnections = 0,
-                    StoreLimitPerBlock = false,
-                    Mode = NoComms,
-                    TargetPersists = false,
-                    Security = Private,
-                    BroadCastRange = 0,
-                    JammingStrength = 0,
-                    RelayRange = 0
-                },
-            },
             HardPoint = new HardPointDef {
                 PartName = "Mjolnir",
                 DeviateShotAngle = 0.2f,
@@ -84,11 +39,11 @@ namespace Scripts {
                 ScanTrackOnly = false,
                 Ui = new UiDef {
                     RateOfFire = true,
-                    RateOfFireMin = 0.25
+                    RateOfFireMin = 0.25f
                 },
                 HardWare = new HardwareDef {
                     InventorySize = 0.105f,
-                    IdlePower = 0.001,
+                    IdlePower = 0.001f,
                     Type = BlockWeapon
                 },
                 Other = new OtherDef {

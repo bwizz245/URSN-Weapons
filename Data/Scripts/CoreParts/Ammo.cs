@@ -41,16 +41,16 @@ namespace Scripts
 {
     partial class Parts {
         private AmmoDef AP30x185 => new AmmoDef {
-            AmmoMagazine = "Energy",
+            AmmoMagazine = "URSN_M76Cartridge",
             AmmoRound = "30mm M76 AP",
             TerminalName = "30mm Armor Piercing",
-            EnergyCost = 0.1f,
             BaseDamage = 120f,
             BaseDamageCutoff = 48f,
-            DecayPerShot = 0.1f,
+            DecayPerShot = 0.0216666f,
             HardPointUsable = true,
             Shape = new ShapeDef {
-                Shape = LineShape
+                Shape = LineShape,
+                Diameter = 20
             },
             Fragment = new FragmentDef {
                 AmmoRound = "30mmAPFrag",
@@ -72,7 +72,7 @@ namespace Scripts
                 Armor = new ArmorDef {
                     Armor = 1f,
                     NonArmor = 0.25f
-                }
+                },
                 Shields = new ShieldDef {
                     Modifier = 1.5f,
                 },
@@ -82,7 +82,7 @@ namespace Scripts
                 }
             },
             Trajectory = new TrajectoryDef {
-                MaxLifeTime = 160f,
+                MaxLifeTime = 156,
                 DesiredSpeed = 1160,
                 MaxTrajectory = 3000,
                 GravityMultiplier = 1f
@@ -101,6 +101,22 @@ namespace Scripts
                             HitMaterial = "Glass",
                             DecalMaterial = "GunBullet"
                         }
+                    }
+                },
+                Lines = new LineDef {
+                    Tracer = new TracerBaseDef {
+                        Enable = true,
+                        Length = 5f,
+                        Width = 0.1f,
+                        Color = Color(red: 3, green: 2, blue: 1, alpha: 1),
+                        FactionColor = DontUse,
+                        VisualFadeStart = 0,
+                        VisualFadeEnd = 0,
+                        AlwaysDraw = false,
+                        Textures = new[] {
+                            "WeaponLaser"
+                        },
+                        TextureMode = Normal
                     }
                 }
             }
