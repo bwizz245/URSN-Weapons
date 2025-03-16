@@ -6,7 +6,7 @@
             <TypeId>AmmoMagazine</TypeId>
             <SubtypeId>URSN_M76Cartridge</SubtypeId>
             </Id>
-            <DisplayName>{LOC:DisplayName_URSN_M76Cartridge}</DisplayName>
+            <DisplayName>M76 30mm AP Cartridge</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\URSN_M76Cartridge.dds</Icon>
             <Size>
                 <X>0.24</X>

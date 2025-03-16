@@ -6,8 +6,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>URSN_Mjolnir</SubtypeId>
 			</Id>
-			<DisplayName>{LOC:DisplayName_URSN_Mjolnir}</DisplayName>
-			<Description>{LOC:Description_URSN_Mjolnir}</Description>
+			<DisplayName>Mjolnir 30mm Autocannon</DisplayName>
+			<Description>BRRRRRRT</Description>
 			<Icon>Textures\GUI\Icons\Cubes\URSN_Mjolnir.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
