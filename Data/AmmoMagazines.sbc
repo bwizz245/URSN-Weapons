@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AmmoMagazines>
+        <AmmoMagazine>
+            <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>URSN_M76Cartridge</SubtypeId>
+            </Id>
+            <DisplayName>{LOC:DisplayName_URSN_M76Cartridge}</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\URSN_M76Cartridge.dds</Icon>
+            <Size>
+                <X>0.24</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>0.86</Mass>
+            <Volume>0.42</Volume>
+            <Model>Models\Items\URSN_M76Cartridge.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="SmallCaliber"/>
+            <CanPlayerOrder>false</CanPlayerOrder>
+        </AmmoMagazine>
+    </AmmoMagazines>
+</Definitions>
