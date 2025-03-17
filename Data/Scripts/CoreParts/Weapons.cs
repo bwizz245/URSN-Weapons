@@ -29,6 +29,46 @@ namespace Scripts {
                     "muzzle_projectile_1"
                 }
             },
+            Targeting = new TargetingDef {
+                Threats = new[] {
+                    Grids,
+                    Characters,
+                    Projectiles
+                },
+                SubSystems = new[] {
+                    Offense,
+                    Thrust,
+                    Power,
+                    Steering,
+                    Any
+                },
+                ClosestFirst = true,
+                IgnoreDumbProjectiles = true,
+                LockedSmartOnly = true,
+                MinimumDiameter = 0,
+                MaximumDiameter = 0,
+                MinTargetDistance = 0,
+                MaxTargetDistance = 0,
+                TopTargets = 4,
+                CycleTargets = 0,
+                TopBlocks = 8,
+                CycleBlocks = 0,
+                StopTrackingSpeed = 0,
+                UniqueTargetPerWeapon = false,
+                MaxTrackingTime = 0,
+                ShootBlanks = false,
+                FocusOnly = false,
+                EvictUniqueTargets = false,
+                Communications = new CommunicationDef { 
+                    StoreTargets = false,
+                    StorageLimit = 0,
+                    MaxConnections = 0,
+                    StoreLimitPerBlock = false,
+                    Mode = NoComms,
+                    TargetPersists = false,
+                    Security = Private
+                }
+            },
             HardPoint = new HardPointDef {
                 PartName = "Mjolnir",
                 DeviateShotAngle = 0.2f,
